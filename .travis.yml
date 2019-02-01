@@ -10,7 +10,7 @@ python:
 #   - mysql
 
 # env:
-#   -DJANGO=1.8 DB=mysql
+#   -DJANGO=2.1.5 DB=mysql
 
 install:
    - pip install -r requirements.txt
@@ -19,5 +19,4 @@ install:
 #       - mysql -e 'create database test;' -u root
 
 script:
-   - python -V 
-#     - python manage.py test
+   - python manage.py test
